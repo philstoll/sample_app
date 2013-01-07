@@ -15,3 +15,13 @@ test:
   timeout: 5000
   username: ubuntu
   password:
+  
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: sample_app_prod
+  pool: 5
+  timeout: 5000
+  username: ubuntu
+  password:
+  
