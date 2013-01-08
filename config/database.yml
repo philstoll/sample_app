@@ -7,7 +7,7 @@ development:
   username: ubuntu
   password:
 
-test:
+test: &test
   adapter: postgresql
   encoding: unicode
   database: sample_app_test
@@ -25,3 +25,5 @@ production:
   username: ubuntu
   password:
   
+cucumber:
+  <<: *test
